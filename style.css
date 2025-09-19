@@ -108,7 +108,7 @@ section{
 .home .content h3{
     font-size: 4.5rem;
     color: #fff;
-    text-transform: uppercase;
+    text-transform: uppercase;;
 }
 
 .home .content h3 span{
@@ -140,8 +140,6 @@ section{
     font-size: 1.8rem;
     color: #fff;
     margin: 1rem 0;
-    font-style: italic;
-    text-shadow: 0 0 .5rem rgba(0,0,0,.3);
 }
 
 section{
@@ -162,6 +160,21 @@ section{
     color: var(--main-color);
     text-transform: uppercase;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* media queries  */
 @media (max-width:991px){
@@ -446,7 +459,9 @@ section{
 }
 
 .pricing .box-container .box .price::before{
-    content: '$';
+    content: '
+
+;
     font-size: 3rem;
     font-weight: normal;
     position: relative;
@@ -641,7 +656,7 @@ section{
     color: #fff;
     background: #333;
     border-radius: .5rem;
-    margin: .7rem 0;
+    margin: 7rem 0;
 }
 
 .contact form .inputBox input::placeholder,
@@ -712,90 +727,81 @@ section{
     font-weight: bolder;
 }
 
-.theme-toggler {
+
+.theme-toggler{
     position: fixed;
-    top: 50%;
-    right: -20rem;
-    transform: translateY(-50%);
+    bottom: -15rem;
+    right: 2rem;
     background: #333;
-    padding: 1rem;
-    border-radius: .5rem 0 0 .5rem;
+    padding: 1.5rem;
+    border-radius: .5rem .5rem 0 0;
     z-index: 1000;
-    text-align: center;
-    width: 20rem;
+    box-shadow: 0 -.5rem 1rem rgba(0,0,0,.2);
+    transition: all .3s ease-out;
 }
 
-.theme-toggler.active {
-    right: 0;
+.theme-toggler.active{
+    bottom: 0;
 }
 
-.theme-toggler h3 {
-    font-size: 2rem;
+.theme-toggler h3{
+    font-size: 1.8rem;
     color: #fff;
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     text-align: center;
+    border-bottom: .1rem solid rgba(255,255,255,.1);
+    padding-bottom: 1rem;
 }
 
-.theme-toggler .buttons {
+.theme-toggler .buttons{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    padding: 1rem;
 }
 
-.theme-toggler .buttons .theme-btn {
-    height: 5rem;
-    width: 5rem;
+.theme-toggler .buttons .theme-btn{
+    height: 4rem;
+    width: 4rem;
     border-radius: 50%;
     cursor: pointer;
+    border: .2rem solid var(--main-color);
+    transition: all .2s linear;
 }
 
-.theme-toggler .toggle-btn {
+.theme-toggler .buttons .theme-btn:hover{
+    transform: scale(1.1);
+}
+
+.theme-toggler .toggle-btn{
     position: absolute;
-    top: 0;
-    left: -5.9rem;
-    padding: 1.3rem 1.5rem;
+    top: -6.5rem;
+    left: 50%;
+    transform: translateX(-50%);
     background: #333;
+    padding: 1.5rem;
+    border-radius: 50%;
     cursor: pointer;
+    border: .2rem solid rgba(255,255,255,.1);
+    box-shadow: 0 -.5rem 1rem rgba(0,0,0,.2);
 }
 
-.theme-toggler .toggle-btn i {
+.theme-toggler .toggle-btn i{
     color: #fff;
-    font-size: 3rem;
-    animation: spin 4s linear infinite;
+    font-size: 2.5rem;
+    animation: pulse 2s linear infinite;
 }
 
-@keyframes spin {
-    0% {
-        transform: rotate(360deg);
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
     }
 }
 
-.footer {
-    color: var(--main-color);
-}
-
-@media (max-width: 768px) {
-    .review .box {
-        padding: 2rem;
-    }
-    .review .box .user img {
-        height: 6rem;
-        width: 6rem;
-    }
-    .review .box .user .user-info h3 {
-        font-size: 1.8rem;
-    }
-    .review .box p {
-        font-size: 1.5rem;
-    }
-}
-.vision-title {
-    font-weight: bold;
-    color: var(--main-color);
-    font-size: 2.2rem;
-    display: block;
-    margin-bottom: 1rem;
-}
