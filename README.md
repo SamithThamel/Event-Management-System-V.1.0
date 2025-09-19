@@ -31,9 +31,12 @@ HTML5 & CSS3 – Structure and styling.
 
 JavaScript – Interactive features.
 
-(If you used PHP, MySQL, or frameworks, you can add them here.)
+ PHP, MySQL - backend and databse
 
 👨‍💻 Author
 
-Developed by Samith Devinda
+Developed by Samith Devinda 
+             Sarani Venushika
+             Samod Fernando
+             Sethini Nenuwari
 1st Year – 2nd Semester Project
