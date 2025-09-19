@@ -25,6 +25,7 @@
 
         <nav class="navbar">
             <a href="#home" class="active">home</a>
+            <a href="#upcoming-events">upcoming events</a>
             <a href="#about">about</a>
             <a href="#services">services</a>
             <a href="#pricing">pricing</a>
@@ -45,7 +46,13 @@
         <div class="content">
             <h3>make your event memorable! with the <span> best Organizers </span></h3>
             <p><span class="vision-title">Our Vision</span><br>“To be the most trusted and creative event management partner, transforming every occasion into a unique and memorable experience that brings people together with joy, style, and excellence.</p>
-            <a href="#" class="btn">get started</a>
+            <div class="get-started-dropdown">
+                <button class="btn" id="getStartedBtn">get started <i class="fas fa-caret-down"></i></button>
+                <div class="get-started-menu" id="getStartedMenu" style="display:none;">
+                    <a href="login.html">Login</a>
+                    <a href="register.html">Register</a>
+                </div>
+            </div>
         </div>
 
         <div class="swiper home-slider">
@@ -80,6 +87,87 @@
     </section>
 
     <!-- home section ends -->
+
+    <!---upcomming events section starts--->
+    <section class="upcoming-events" id="upcoming-events">
+        <h1 class="heading"> upcoming <span>events</span> </h1>
+        <div class="box-container">
+            <div class="box" data-event="0">
+                <img src="Event Slidder/event -1.jpg" alt="">
+                <h3 class ="title">KDU MATHAKA</h3>
+                <p class="date">Date: 2023-09-12</p>
+                <p class="location" >Location: KDU FOOTBALL GROUND</p>
+                <div class="icons">
+                    <button class="like-btn" aria-label="Like"><i class="fas fa-heart"></i> <span class="like-count">0</span></button>
+                    <button class="comment-btn" aria-label="Comment"><i class="fas fa-comment"></i></button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+                <div class="comment-section" style="display:none;">
+                    <div class="comments-list"></div>
+                    <form class="comment-form">
+                        <input type="text" class="comment-input" placeholder="Add a comment..." required>
+                        <button type="submit" class="btn" style="padding:0.5rem 1.5rem;font-size:1.2rem;">Post</button>
+                    </form>
+                </div>
+            </div>
+            <div class="box" data-event="1">
+                <img src="Event Slidder/event - 2.jpg" alt="">
+                <h3 class ="title">KDU ANANTHE</h3>
+                <p class="date">Date: 2025-10-03</p>
+                <p class="location">Location: KDU FOOTBALL GROUND</p>
+                <div class="icons">
+                    <button class="like-btn" aria-label="Like"><i class="fas fa-heart"></i> <span class="like-count">0</span></button>
+                    <button class="comment-btn" aria-label="Comment"><i class="fas fa-comment"></i></button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+                <div class="comment-section" style="display:none;">
+                    <div class="comments-list"></div>
+                    <form class="comment-form">
+                        <input type="text" class="comment-input" placeholder="Add a comment..." required>
+                        <button type="submit" class="btn" style="padding:0.5rem 1.5rem;font-size:1.2rem;">Post</button>
+                    </form>
+                </div>
+            </div>
+            <div class="box" data-event="2">
+                <img src="Event Slidder/event - 3.jpg" alt="">
+                <h3 class ="title">Emily & John Wedding</h3>
+                <p class="date">Date: 2023-10-10</p>
+                <p class="location">Location: Shangrila Hotel</p>
+                <div class="icons">
+                    <button class="like-btn" aria-label="Like"><i class="fas fa-heart"></i> <span class="like-count">0</span></button>
+                    <button class="comment-btn" aria-label="Comment"><i class="fas fa-comment"></i></button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+                <div class="comment-section" style="display:none;">
+                    <div class="comments-list"></div>
+                    <form class="comment-form">
+                        <input type="text" class="comment-input" placeholder="Add a comment..." required>
+                        <button type="submit" class="btn" style="padding:0.5rem 1.5rem;font-size:1.2rem;">Post</button>
+                    </form>
+                </div>
+            </div>
+            <div class="box" data-event="3">
+                <img src="Event Slidder/event - 4.jpg" alt="">
+                <h3 class ="title">Mercy's Birthday Party</h3>
+                <p class="date">Date: 2023-10-15</p>
+                <p class="location">Location: Barista Cafe</p>
+                <div class="icons">
+                    <button class="like-btn" aria-label="Like"><i class="fas fa-heart"></i> <span class="like-count">0</span></button>
+                    <button class="comment-btn" aria-label="Comment"><i class="fas fa-comment"></i></button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+                <div class="comment-section" style="display:none;">
+                    <div class="comments-list"></div>
+                    <form class="comment-form">
+                        <input type="text" class="comment-input" placeholder="Add a comment..." required>
+                        <button type="submit" class="btn" style="padding:0.5rem 1.5rem;font-size:1.2rem;">Post</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--upcomming events section ends-->
+
      <!--service section start-->
     <section class="services" id="services">
         <h1 class="heading"> our <span>services</span> </h1>
@@ -87,37 +175,37 @@
             <div class="box">
                 <i class="fas fa-birthday-cake"></i>
                 <h3>Birthday Party</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                <p>Get your dream birthday party planned with us!</p>
                 <a href="#" class="btn">read more</a>
             </div>
             <div class="box">
                 <i class="fas fa-glass-cheers"></i>
                 <h3>Wedding Party</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                <p>Get your dream wedding party planned with us!</p>
                 <a href="#" class="btn">read more</a>
             </div>
             <div class="box">
                 <i class="fas fa-briefcase"></i>
                 <h3>Business Event</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                <p>Get your dream business event planned with us!</p>
                 <a href="#" class="btn">read more</a>
             </div>
             <div class="box">
                 <i class="fas fa-music"></i>
                 <h3>Music Event</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                <p>Get your dream music event planned with us!</p>
                 <a href="#" class="btn">read more</a>
             </div>
             <div class="box">
                 <i class="fas fa-film"></i>
                 <h3>Movie Event</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                <p>Get your dream movie event planned with us!</p>
                 <a href="#" class="btn">read more</a>
             </div>
             <div class="box">
                 <i class="fas fa-users"></i>
                 <h3>Family Gathering</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                <p>Get your dream family gathering planned with us!</p>
                 <a href="#" class="btn">read more</a>
             </div>
         </div>
@@ -382,12 +470,31 @@
         <div class="theme-btn" style="background: #2ed573;"></div>
         <div class="theme-btn" style="background: #ffa801;"></div>
         <div class="theme-btn" style="background: #ff3f34;"></div>
-        <div class="theme-btn" style="background: #1abc9c;"></div>
+        <div class="theme-btn" style="background: #ff6b81;"></div>
     </div>
 </div>
 
     <!-- custom js file link  -->
     <script src="script.js"></script>
+</body>
+<script>
+// Dropdown for get started button
+document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.getElementById('getStartedBtn');
+    var menu = document.getElementById('getStartedMenu');
+    if(btn && menu) {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+        });
+        document.addEventListener('click', function(e) {
+            if (!btn.contains(e.target) && !menu.contains(e.target)) {
+                menu.style.display = 'none';
+            }
+        });
+    }
+});
+</script>
 </body>
 </html>
 

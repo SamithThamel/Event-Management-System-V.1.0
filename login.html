@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Evento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="login-section">
+        <h1 class="heading">Login</h1>
+        <form id="loginForm" method="POST" action="/login">
+            <div class="inputBox">
+                <input type="text" name="username" placeholder="Username" required>
+            </div>
+            <div class="inputBox">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <input type="submit" value="Login" class="btn">
+            <p>Don't have an account? <a href="register.html">Register</a></p>
+        </form>
+    </section>
+</body>
+</html>

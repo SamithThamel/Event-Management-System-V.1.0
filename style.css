@@ -1,3 +1,168 @@
+/* Get Started Dropdown */
+.get-started-dropdown {
+    position: relative;
+    display: inline-block;
+}
+.get-started-dropdown .btn {
+    position: relative;
+    z-index: 2;
+}
+.get-started-menu {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background: #fff;
+    border-radius: 0.7rem;
+    box-shadow: 0 4px 16px rgba(56,103,214,0.10);
+    min-width: 140px;
+    z-index: 10;
+    padding: 0.5rem 0;
+    text-align: left;
+}
+.get-started-menu a {
+    display: block;
+    padding: 0.7rem 1.2rem;
+    color: #3867d6;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background 0.2s, color 0.2s;
+}
+.get-started-menu a:hover {
+    background: #e0e7ff;
+    color: #222f3e;
+}
+/* Centered and stylish login/register sections */
+/* Match login/register background to index.html theme */
+.login-section, .register-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #3867d6 0%, #e0e7ff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Optional: Add floating theme circles for effect */
+.login-section::before, .register-section::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    background: rgba(56,103,214,0.15);
+    border-radius: 50%;
+    z-index: 0;
+}
+.login-section::after, .register-section::after {
+    content: '';
+    position: absolute;
+    bottom: -120px;
+    right: -120px;
+    width: 250px;
+    height: 250px;
+    background: rgba(232,67,147,0.12);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.login-section form, .register-section form {
+    position: relative;
+    z-index: 1;
+}
+.login-section .heading, .register-section .heading {
+    position: relative;
+    z-index: 1;
+}
+
+.login-section .heading, .register-section .heading {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #3b3b98;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.login-section form, .register-section form {
+    background: #fff;
+    padding: 2.5rem 2rem 2rem 2rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 320px;
+    max-width: 90vw;
+}
+
+.login-section .inputBox, .register-section .inputBox {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.login-section input[type="text"],
+.login-section input[type="password"],
+.register-section input[type="text"],
+.register-section input[type="password"],
+.register-section input[type="email"] {
+    width: 100%;
+    padding: 0.9rem 1.1rem;
+    border: 1px solid #b2bec3;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    background: #f1f2f6;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.login-section input[type="text"]:focus,
+.login-section input[type="password"]:focus,
+.register-section input[type="text"]:focus,
+.register-section input[type="password"]:focus,
+.register-section input[type="email"]:focus {
+    border: 1.5px solid #3b3b98;
+}
+
+.login-section .btn, .register-section .btn {
+    width: 100%;
+    padding: 0.9rem;
+    background: linear-gradient(90deg, #3b3b98 0%, #6dd5ed 100%);
+    color: #fff;
+    border: none;
+    border-radius: 0.7rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    box-shadow: 0 2px 8px rgba(59,59,152,0.08);
+    transition: background 0.2s, transform 0.1s;
+}
+
+.login-section .btn:hover, .register-section .btn:hover {
+    background: linear-gradient(90deg, #6dd5ed 0%, #3b3b98 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.login-section p, .register-section p {
+    margin-top: 1.2rem;
+    color: #636e72;
+    font-size: 1rem;
+}
+
+.login-section a, .register-section a {
+    color: #3b3b98;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.login-section a:hover, .register-section a:hover {
+    color: #0984e3;
+}
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
@@ -250,6 +415,76 @@ section{
 
 .swiper-pagination-bullet-active {
     background: var(--main-color);
+}
+
+
+.upcoming-events .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.upcoming-events .box {
+    background: #333;
+    border-radius: 1rem;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+.upcoming-events .box:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 1.5rem 2.5rem rgba(56,103,214,0.15);
+}
+.upcoming-events .box img {
+    height: 18rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .7rem;
+    margin-bottom: 1.2rem;
+    transition: transform 0.3s, filter 0.3s;
+    box-shadow: 0 0.2rem 0.8rem rgba(56,103,214,0.08);
+}
+.upcoming-events .box img:hover {
+    transform: scale(1.06);
+    filter: grayscale(0.2) brightness(1.1);
+}
+.upcoming-events .box .title {
+    font-size: 2.1rem;
+    color: var(--main-color);
+    margin-bottom: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.upcoming-events .box .date,
+.upcoming-events .box .location {
+    font-size: 1.4rem;
+    color: #eee;
+    margin: 0.3rem 0 0.7rem 0;
+    border-bottom: .1rem solid rgba(255,255,255,.08);
+    padding-bottom: 0.3rem;
+}
+.upcoming-events .box .icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.2rem;
+}
+.upcoming-events .box .icons a {
+    font-size: 2.1rem;
+    color: #fff;
+    background: var(--main-color);
+    border-radius: 50%;
+    padding: 0.7rem 1rem;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    box-shadow: 0 0.2rem 0.5rem rgba(56,103,214,0.10);
+}
+.upcoming-events .box .icons a:hover {
+    background: #fff;
+    color: var(--main-color);
+    transform: scale(1.15);
 }
 
 .services .box-container{
